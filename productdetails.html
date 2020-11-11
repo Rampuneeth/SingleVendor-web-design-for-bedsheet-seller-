@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products | Ecommerce website design </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>BEDSTORE</h2>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!-- Single  Products  details-->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="bedsh19.jpeg" width="85%">
+            </div>
+            <div class="col-2">
+                <p>Home / Bedsheet</p>
+                <h1>Printed designer bedsheet</h1>
+                <h4>$35.00</h4>
+                <select>
+                    <option>select size</option>
+                    <option>7/7</option>
+                    <option>6/6</option>
+                    <option>6/5</option>
+                    <option>6/4</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Buy Now</a>
+                <h3>Product details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro officiis architect.lorem</p>
+            </div>
+        </div>
+    </div>
+    <!-- Title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related product</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="bedsh1.jpg" alt="">
+                <h4>Printed BedSheet</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="bedsh18.jpg" alt="">
+                <h4>Box Printed BedSheet</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-4">
+                <img src="bedsh17.jpg" alt="">
+                <h4>Tri Printed BedSheet</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+            <div class="col-4">
+                <img src="bedsh16.jpeg" alt="">
+                <h4>Red floral design BedSheet</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+        </div>
+       
+    </div>
+    <!--    Footer     -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h2><span>BED</span>STORE</h2>
+                    <p>Our purpose is to sustainable make the <br> Comfortable  and design of Bedsheets</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copy right 2020-Rampuneeth</p>
+        </div>
+    </div>
+    <!-- JS FOR togglemenu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight == "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
